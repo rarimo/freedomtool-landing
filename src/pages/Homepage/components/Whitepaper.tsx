@@ -14,7 +14,7 @@ export default function Whitepaper({ ...rest }: Props) {
     <div {...rest}>
       <UiContainer>
         <div className={cn('flex flex-col text-center')}>
-          <h4 className={cn('text-h4')}>{t('whitepaper.title')}</h4>
+          <h3 className={cn('text-h4')}>{t('whitepaper.title')}</h3>
 
           <div className={cn('flex flex-col text-center')}>
             <span className={cn('text-subtitle1')}>{t('whitepaper.text')}</span>

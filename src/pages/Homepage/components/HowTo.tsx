@@ -40,7 +40,7 @@ export default function HowTo({ ...rest }: Props) {
     <div {...rest}>
       <UiContainer>
         <div className={cn('flex flex-col text-center')}>
-          <h4 className={cn('text-h4')}>{t('how-to.title')}</h4>
+          <h3 className={cn('text-h4')}>{t('how-to.title')}</h3>
 
           <div
             className={cn(

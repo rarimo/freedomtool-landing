@@ -18,7 +18,7 @@ export default function HeroBanner({ ...rest }: Props) {
       )}
     >
       <UiContainer>
-        <div className={cn('flex flex-col items-center text-center gap-15')}>
+        <h1 className={cn('flex flex-col items-center text-center gap-15')}>
           {[t('hero-banner.title-part-1'), t('hero-banner.title-part-2')].map(
             (el, idx) => (
               <span key={idx} className={cn('text-h3', 'lg:max-w-[700px]')}>
@@ -26,7 +26,7 @@ export default function HeroBanner({ ...rest }: Props) {
               </span>
             ),
           )}
-        </div>
+        </h1>
 
         <div className={cn('flex flex-col gap-6 items-end')}>
           <span className='hero-banner__signature'>
