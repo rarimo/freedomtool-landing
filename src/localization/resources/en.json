@@ -28,5 +28,20 @@
     "title": "An identification and privacy solution that revolutionizes polling, surveying and election processes",
     "text": "With the progress in cryptographic technologies, including Zero-Knowledge proofs for enhanced privacy, and the Blockchain as an immutable and decentralized system immune to tampering and attacks, we can now develop the first fully decentralized tools that are free from coercion. Empowering people to voice their opinions despite modern social and political challenges.",
     "link": "Read the Whitepaper"
+  },
+  "how-to": {
+    "title": "How it works",
+
+    "step-1-title": "Secure Passport Scan",
+    "step-1-desc": "When you scan your document, it creates a random ID right on your device, ensuring no personal data ever leaves your phone for complete privacy.",
+
+    "step-2-title": "Creating a Unique Voting Pass",
+    "step-2-desc": "The system generates a special 'voting pass' for you, keeping your identity private and preventing multiple votes.",
+
+    "step-3-title": "Anonymous Voting",
+    "step-3-desc": "Cast your vote anonymously; it's securely recorded on the blockchain, making it tamper-proof and non traceable.",
+
+    "step-4-title": "Transparent Results",
+    "step-4-desc": "Once voting ends, results are available on the blockchain for anyone to see, ensuring immutability and no single-party control."
   }
 }

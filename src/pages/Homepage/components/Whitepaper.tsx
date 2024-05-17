@@ -17,9 +17,9 @@ export default function Whitepaper({ ...rest }: Props) {
           <h4 className={cn('text-h4')}>{t('whitepaper.title')}</h4>
 
           <div className={cn('flex flex-col text-center')}>
-            <span className='text-subtitle1'>{t('whitepaper.text')}</span>
+            <span className={cn('text-subtitle1')}>{t('whitepaper.text')}</span>
 
-            <span className='text-subtitle1'>{`* * *`}</span>
+            <span className={cn('text-subtitle1')}>{`* * *`}</span>
           </div>
 
           <UiIconLink

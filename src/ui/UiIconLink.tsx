@@ -27,7 +27,7 @@ export default function UiIconLink({ route, href, children, ...rest }: Props) {
       <span className='icon-link__text'>{children}</span>
       <UiIcon
         className={cn('size-5 text-inherit')}
-        name={IconNames.AcademicCap}
+        name={IconNames.ExternalLink}
       />
     </>
   )
