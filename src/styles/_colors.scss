@@ -1,0 +1,95 @@
+$white: #ffffff;
+$white-rgb: hexToRGB($white);
+$black: #000000;
+$black-rgb: hexToRGB($black);
+
+$background-primary-light: #ffffff;
+$background-primary-main: #ffffff;
+$background-primary-dark: #ece6e6;
+
+$background-primary-light-rgb: hexToRGB($background-primary-light);
+$background-primary-main-rgb: hexToRGB($background-primary-main);
+$background-primary-dark-rgb: hexToRGB($background-primary-dark);
+
+$background-secondary-light: $white;
+$background-secondary-main: $white;
+$background-secondary-dark: $white;
+
+$background-secondary-light-rgb: hexToRGB($background-secondary-light);
+$background-secondary-main-rgb: hexToRGB($background-secondary-main);
+$background-secondary-dark-rgb: hexToRGB($background-secondary-dark);
+
+$background-tertiary-light: #1f2124;
+$background-tertiary-main: #1f2124;
+$background-tertiary-dark: #1f2124;
+
+$background-tertiary-light-rgb: hexToRGB($background-tertiary-light);
+$background-tertiary-main-rgb: hexToRGB($background-tertiary-main);
+$background-tertiary-dark-rgb: hexToRGB($background-tertiary-dark);
+
+/* status colors */
+
+$success-light: #d6f4de;
+$success-main: #2ca74b;
+$success-dark: #2ca74b;
+
+$error-light: #fff2f2;
+$error-main: #dd2e2e;
+$error-dark: #b3261e;
+
+$warning-light: rgba(#e18e2d, 0.1);
+$warning-main: #f6851b;
+$warning-dark: #e18e2d;
+
+$info-light: #eff2ff;
+$info-main: #40c4ff;
+$info-dark: #0094cc;
+
+/* brand colors */
+
+$primary-light: #3044fe;
+$primary-main: #3044fe;
+$primary-dark: #3044fe;
+
+$primary-light-rgb: hexToRGB($primary-light);
+$primary-main-rgb: hexToRGB($primary-main);
+$primary-dark-rgb: hexToRGB($primary-dark);
+
+$secondary-light: #c2c9dc;
+$secondary-main: #8d91a5;
+$secondary-dark: #5b6271;
+
+/* typography colors */
+
+/* mostly for base text in this app */
+$text-primary-light: #575761;
+$text-primary-main: #2d3441;
+$text-primary-dark: #222834;
+
+$text-primary-invert-light: #ffffff;
+$text-primary-invert-main: #ffffff;
+$text-primary-invert-dark: #ffffff;
+
+/* mostly for second text in this app */
+$text-secondary-light: #1f2124;
+$text-secondary-main: #1f2124;
+$text-secondary-dark: #1f2124;
+
+/* mostly for title text in this app */
+$text-tertiary-light: #8f8f8f;
+$text-tertiary-main: #8f8f8f;
+$text-tertiary-dark: #8f8f8f;
+
+$text-secondary-invert-light: rgba(#fffbfe, 0.5);
+$text-secondary-invert-main: rgba(#fffbfe, 0.5);
+$text-secondary-invert-dark: rgba(#fffbfe, 0.5);
+
+/* border colors */
+
+$border-primary-light: #ebecef;
+$border-primary-main: #ebecef;
+$border-primary-dark: #ebecef;
+
+$border-secondary-light: #e0e0ec;
+$border-secondary-main: #c4c4d0;
+$border-secondary-dark: #a9abb4;
