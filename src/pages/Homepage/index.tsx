@@ -13,10 +13,6 @@ export default function Homepage({ ...rest }: Props) {
     <motion.div {...rest} className={cn(rest.className, '')}>
       <HeroBanner className={cn('max-w-full w-full')} />
 
-      <UiContainer>
-        <UiDivider />
-      </UiContainer>
-
       <Whitepaper className={cn('max-w-full w-full')} />
 
       <UiContainer>
