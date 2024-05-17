@@ -23,5 +23,10 @@
     "title-part-1": "You will not find a solution to political problems in cryptography.",
     "title-part-2": "> yes, but we can win a major battle in the arms race and gain a new territory of freedom...",
     "signature": "S.N"
+  },
+  "whitepaper": {
+    "title": "An identification and privacy solution that revolutionizes polling, surveying and election processes",
+    "text": "With the progress in cryptographic technologies, including Zero-Knowledge proofs for enhanced privacy, and the Blockchain as an immutable and decentralized system immune to tampering and attacks, we can now develop the first fully decentralized tools that are free from coercion. Empowering people to voice their opinions despite modern social and political challenges.",
+    "link": "Read the Whitepaper"
   }
 }
