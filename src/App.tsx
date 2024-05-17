@@ -26,9 +26,7 @@ export function App() {
     init()
   })
 
-  return (
-    <div className='app'>
-      {isAppInitialized ? <AppRoutes /> : <UiSpinner />}
-    </div>
-  )
+  if (!isAppInitialized) return <UiSpinner />
+
+  return <AppRoutes />
 }

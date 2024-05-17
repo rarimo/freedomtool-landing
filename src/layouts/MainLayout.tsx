@@ -2,18 +2,18 @@ import { AnimatePresence } from 'framer-motion'
 import { HTMLAttributes } from 'react'
 import { Outlet } from 'react-router-dom'
 
-import { UiNavbar } from '@/ui'
+import { cn } from '@/theme/utils'
+import { UiContainer, UiNavbar } from '@/ui'
 
 export default function MainLayout({
   className,
   ...rest
 }: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div
-      {...rest}
-      className={['main-layout', ...(className ? [className] : [])].join(' ')}
-    >
-      <UiNavbar className='app__navbar' />
+    <div {...rest} className={cn(className)}>
+      <UiContainer>
+        <UiNavbar className={cn('')} />
+      </UiContainer>
 
       <AnimatePresence>
         <Outlet />

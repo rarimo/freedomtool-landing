@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import { Config } from 'tailwindcss'
 
 import {
   animation,
@@ -25,4 +25,5 @@ const config: Config = {
   },
   plugins: [],
 }
+
 export default config

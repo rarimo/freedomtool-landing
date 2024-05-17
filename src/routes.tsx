@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react'
 import {
-  createBrowserRouter,
+  createHashRouter,
   Navigate,
   Outlet,
   RouterProvider,
@@ -10,9 +10,8 @@ import { RoutePaths } from '@/enums'
 import { MainLayout } from '@/layouts'
 
 export const AppRoutes = () => {
-  const StoreOverview = lazy(() => import('@/pages/StoreOverview'))
-  const UiKit = lazy(() => import('@/pages/UiKit'))
-  const ComplexForm = lazy(() => import('@/pages/ComplexForm'))
+  const Homepage = lazy(() => import('@/pages/Homepage'))
+  const TechDoc = lazy(() => import('@/pages/TechDoc'))
 
   const pageAnimationOpts = {
     initial: 'hide',
@@ -29,7 +28,7 @@ export const AppRoutes = () => {
     transition: { duration: 0.5 },
   }
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: RoutePaths.Root,
       element: (
@@ -42,24 +41,16 @@ export const AppRoutes = () => {
           element: <MainLayout />,
           children: [
             {
-              path: RoutePaths.UiKit,
-              element: <UiKit {...pageAnimationOpts} />,
-            },
-            {
-              path: RoutePaths.ComplexForm,
-              element: <ComplexForm {...pageAnimationOpts} />,
-            },
-            {
-              path: RoutePaths.StoreOverview,
-              element: <StoreOverview {...pageAnimationOpts} />,
-            },
-            {
               path: RoutePaths.Root,
-              element: <Navigate replace to={RoutePaths.UiKit} />,
+              element: <Homepage {...pageAnimationOpts} />,
+            },
+            {
+              path: RoutePaths.techDoc,
+              element: <TechDoc {...pageAnimationOpts} />,
             },
             {
               path: '*',
-              element: <Navigate replace to={RoutePaths.UiKit} />,
+              element: <Navigate replace to={RoutePaths.Root} />,
             },
           ],
         },
