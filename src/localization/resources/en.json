@@ -44,6 +44,11 @@
     "step-4-title": "Transparent Results",
     "step-4-desc": "Once voting ends, results are available on the blockchain for anyone to see, ensuring immutability and no single-party control."
   },
+  "repos": {
+    "title": "Open source repositories",
+    "col-title-1": "Decentralized identification process",
+    "col-title-2": "Independently formed voter allowlist"
+  },
   "invitation": {
     "title": "Join the territory of freedom",
     "invitation-btn": "Discord",
