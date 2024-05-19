@@ -1,15 +1,11 @@
 .ui-no-data-message {
-  display: grid;
-  place-items: center;
-  text-align: center;
-  grid-gap: toRem(12);
+  @apply grid place-items-center text-center gap-3;
 }
 
 .ui-no-data-message__img {
-  width: 100%;
-  height: auto;
+  @apply w-full h-auto;
 }
 
 .ui-no-data-message__message {
-  font-size: toRem(18);
+  @apply text-[18px];
 }

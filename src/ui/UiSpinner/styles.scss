@@ -1,17 +1,13 @@
 .ui-spinner {
-  display: inline-block;
-  width: toRem(80);
-  height: toRem(80);
+  @apply inline-block size-20;
 }
 
 .ui-spinner:after {
   content: ' ';
   display: block;
-  width: toRem(64);
-  height: toRem(64);
-  margin: toRem(8);
-  border-radius: 50%;
-  border: toRem(6) solid var(--border-primary-main);
+
+  @apply size-16 m-2 rounded-[50%] border-[6px] border-solid;
+
   border-color: var(--border-primary-main) transparent
   var(--border-primary-main) transparent;
   animation: spinner 1.2s linear infinite;

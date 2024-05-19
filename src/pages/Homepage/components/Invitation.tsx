@@ -1,10 +1,9 @@
-import { config } from '@config'
 import { HTMLAttributes } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { IconNames } from '@/enums'
 import { cn } from '@/theme/utils'
-import { UiButton, UiContainer, UiIcon } from '@/ui'
+import { UiContainer, UiIcon } from '@/ui'
 
 type Props = HTMLAttributes<HTMLDivElement>
 

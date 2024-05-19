@@ -18,8 +18,7 @@
       "node",
       "vite/client",
       "@types/lodash",
-      "@types/uuid",
-      "@types/markdown-it"
+      "@types/uuid"
     ],
     "paths": {
       "@/*": ["src/*"],
