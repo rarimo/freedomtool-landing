@@ -10,3 +10,5 @@ interface ImportMetaEnv {
 interface Document {
   ENV: ImportMetaEnv
 }
+
+declare module '*.md'

@@ -53,5 +53,8 @@
     "title": "Join the territory of freedom",
     "invitation-btn": "Discord",
     "disabled-msg": "Coming soon!"
+  },
+  "tech-doc": {
+    "back-link": "Back"
   }
 }
