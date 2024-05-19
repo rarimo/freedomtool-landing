@@ -45,10 +45,10 @@ export default function Repos({ ...rest }: Props) {
   ]
 
   return (
-    <div {...rest}>
+    <div {...rest} className={cn('py-20')}>
       <UiContainer>
         <div id='oss-repos-wrp' className={cn('flex flex-col text-center')}>
-          <h3 id='oss-repos' className={cn('text-h4')}>
+          <h3 id='oss-repos' className={cn('text-h3 text-center mb-[58px]')}>
             {t('repos.title')}
           </h3>
 
@@ -64,7 +64,7 @@ export default function Repos({ ...rest }: Props) {
                   <UiIconLink
                     key={idx}
                     href={el.href}
-                    className={cn('-tracking-[1.4px] text-[18px]')}
+                    className={cn('text-body2')}
                   >
                     {el.title}
                   </UiIconLink>

@@ -1,25 +1,25 @@
 import { ThemeConfig } from 'tailwindcss/types/config'
 
 export const fontSize: ThemeConfig['fontSize'] = {
-  h1: ['96px', { lineHeight: '96px', fontWeight: '700' }],
+  h1: ['36px', { lineHeight: '36px', fontWeight: '400' }],
   h2: ['60px', { lineHeight: '66px', fontWeight: '700' }],
-  h3: ['40px', { lineHeight: '48px', fontWeight: '700' }],
+  h3: ['28px', { lineHeight: '28px', fontWeight: '700' }],
   h4: ['32px', { lineHeight: '40px', fontWeight: '700' }],
   h5: ['24px', { lineHeight: '30px', fontWeight: '700' }],
   h6: ['20px', { lineHeight: '26px', fontWeight: '700' }],
 
-  subtitle1: ['24px', { lineHeight: '30px', fontWeight: '600' }],
+  subtitle1: ['20px', { lineHeight: '20px', fontWeight: '500' }],
   subtitle2: ['20px', { lineHeight: '26px', fontWeight: '600' }],
   subtitle3: ['16px', { lineHeight: '20px', fontWeight: '600' }],
   subtitle4: ['14px', { lineHeight: '18px', fontWeight: '600' }],
 
   body1: [
     '20px',
-    { lineHeight: '26px', fontWeight: '400', letterSpacing: '0.02em' },
+    { lineHeight: '20px', fontWeight: '400', letterSpacing: '0.02em' },
   ],
   body2: [
-    '16px',
-    { lineHeight: '20px', fontWeight: '400', letterSpacing: '0.02em' },
+    '14px',
+    { lineHeight: '18px', fontWeight: '400', letterSpacing: '0.02em' },
   ],
   body3: [
     '14px',
@@ -49,4 +49,10 @@ export const fontSize: ThemeConfig['fontSize'] = {
     '18px',
     { lineHeight: '26px', fontWeight: '500', letterSpacing: '0.02em' },
   ],
+}
+
+export const fontFamily: ThemeConfig['fontFamily'] = {
+  primary: 'Roboto Mono',
+  secondary: 'Oxygen Mono',
+  tertiary: 'Roboto Slab',
 }

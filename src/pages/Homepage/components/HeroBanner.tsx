@@ -10,26 +10,36 @@ export default function HeroBanner({ ...rest }: Props) {
   const { t } = useTranslation()
 
   return (
-    <div
-      {...rest}
-      className={cn(
-        rest.className,
-        "bg-[url('/images/hero-banner-bg.png')] bg-no-repeat bg-cover",
-      )}
-    >
-      <UiContainer>
-        <h1 className={cn('flex flex-col items-center text-center gap-15')}>
+    <div {...rest} className={cn(rest.className, 'pb-20')}>
+      <UiContainer className={cn('relative')}>
+        <img
+          className={cn(
+            'absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none',
+          )}
+          src='/images/hero-banner-bg.png'
+          alt='decor'
+        />
+        <h1
+          className={cn(
+            'flex flex-col items-center text-center gap-15 lg:max-w-[700px]',
+            'text-h1 -tracking-[1.4px]',
+            'lg:py-[140px] mx-auto',
+          )}
+        >
           {[t('hero-banner.title-part-1'), t('hero-banner.title-part-2')].map(
             (el, idx) => (
-              <span key={idx} className={cn('text-h3', 'lg:max-w-[700px]')}>
-                {el}
-              </span>
+              <span key={idx}>{el}</span>
             ),
           )}
         </h1>
 
         <div className={cn('flex flex-col gap-6 items-end')}>
-          <span className='hero-banner__signature'>
+          <span
+            className={cn(
+              'text-[16px] italic -tracking-[1.04px]',
+              'sm:text-[26px]',
+            )}
+          >
             {t('hero-banner.signature')}
           </span>
           <UiDivider />

@@ -4,6 +4,7 @@ import {
   animation,
   borderRadius,
   colors,
+  fontFamily,
   fontSize,
   keyframes,
   screens,
@@ -16,6 +17,7 @@ const config: Config = {
     extend: {
       colors,
       fontSize,
+      fontFamily,
       borderRadius,
       screens,
       spacing,

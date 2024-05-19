@@ -15,10 +15,10 @@
 
 @keyframes spinner {
   0% {
-    transform: rotate(0deg);
+    @apply rotate-0;
   }
 
   100% {
-    transform: rotate(360deg);
+    @apply rotate-[360deg];
   }
 }

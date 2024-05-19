@@ -24,7 +24,7 @@ const ROOT_CLASS_NAMES = cn(
 export default function UiIconLink({ route, href, children, ...rest }: Props) {
   const innerContent = (
     <>
-      <span className='icon-link__text'>{children}</span>
+      <span>{children}</span>
       <UiIcon
         className={cn('size-5 text-inherit')}
         name={IconNames.ExternalLink}

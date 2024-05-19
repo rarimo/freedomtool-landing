@@ -7,16 +7,12 @@
 // Colors
 :root {
   // Text
-  --app-font-family: 'Roboto Mono';
-  --app-font-family-secondary: 'Oxygen Mono', monospace;
-  --app-font-family-tertiary: 'Roboto Slab', monospace;
-
   --color-text-primary: #202020;
   --color-text-secondary: rgba(32, 32, 32, 0.56);
 
   // Primary
-  --color-primary-base: #CDFD4A;
-  --color-primary-dark: #ACD53E;
+  --color-primary-base: rgba(128, 237, 153, 1);
+  --color-primary-dark: rgba(128, 237, 153, 1);
 
   // Secondary
   --color-secondary-base: #202020;
@@ -31,5 +27,5 @@
 }
 
 html {
-  font-family: var(--app-font-family), 'Arial', sans-serif;
+  @apply font-primary;
 }

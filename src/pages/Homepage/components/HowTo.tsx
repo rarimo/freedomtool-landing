@@ -37,14 +37,16 @@ export default function HowTo({ ...rest }: Props) {
   )
 
   return (
-    <div {...rest}>
+    <div {...rest} className={cn('py-20')}>
       <UiContainer>
         <div className={cn('flex flex-col text-center')}>
-          <h3 className={cn('text-h4')}>{t('how-to.title')}</h3>
+          <h3 className={cn('text-h3 text-center mb-[58px]')}>
+            {t('how-to.title')}
+          </h3>
 
           <div
             className={cn(
-              'flex justify-center items-center overflow-hidden w-[clamp(#{300px},100%,#{600px})] max-h-[320px] border-[color:var(--border-primary-main)] mx-auto my-[40px] rounded-[16px] border-[1px] border-solid',
+              'flex justify-center items-center overflow-hidden w-[clamp(300px,100%,600px)] max-h-[320px] border-[color:var(--border-primary-main)] mx-auto my-[40px] rounded-[16px] border-[1px] border-solid',
             )}
           >
             {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
@@ -60,9 +62,9 @@ export default function HowTo({ ...rest }: Props) {
 
           <div className={cn('flex gap-2')}>
             {steps.map((el, idx) => (
-              <div key={idx} className={cn('flex flex-col gap-2')}>
-                <div className='relative'>
-                  <UiIcon className={cn('size-full')} name={el.iconName} />
+              <div key={idx} className={cn('flex flex-col items-center gap-2')}>
+                <div className='flex justify-center relative w-full'>
+                  <UiIcon className={cn('size-20')} name={el.iconName} />
 
                   {idx < steps.length - 1 && (
                     <UiIcon
@@ -73,8 +75,12 @@ export default function HowTo({ ...rest }: Props) {
                     />
                   )}
                 </div>
-                <span className={cn('')}>{el.title}</span>
-                <span className={cn('')}>{el.description}</span>
+                <span className={cn('font-tertiary text-subtitle1 mt-6 mb-4')}>
+                  {el.title}
+                </span>
+                <span className={cn('font-secondary text-body2 mt-auto')}>
+                  {el.description}
+                </span>
               </div>
             ))}
           </div>
