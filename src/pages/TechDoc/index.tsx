@@ -3,9 +3,10 @@ import { HTMLAttributes } from 'react'
 import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router-dom'
 
-import { RoutePaths } from '@/enums'
+import { IconNames, RoutePaths } from '@/enums'
 import anonDoc from '@/localization/resources/AnonDoc-en.md'
-import { UiContainer, UiMarkdown } from '@/ui'
+import { cn } from '@/theme/utils'
+import { UiContainer, UiIcon, UiMarkdown } from '@/ui'
 
 type Props = HTMLAttributes<HTMLDivElement> & MotionProps
 
@@ -14,8 +15,16 @@ export default function TechDoc({ ...rest }: Props) {
 
   return (
     <motion.div {...rest}>
-      <UiContainer>
-        <NavLink to={RoutePaths.Root}>{t('tech-doc.back-link')}</NavLink>
+      <UiContainer className={cn('flex flex-col')}>
+        <NavLink
+          to={RoutePaths.Root}
+          className={cn(
+            'flex gap-2 items-center border-b-2 border-black self-start mb-16',
+          )}
+        >
+          <UiIcon name={IconNames.ArrowLeft} className='size-4' />
+          <span className=''>{t('tech-doc.back-link')}</span>
+        </NavLink>
 
         <UiMarkdown source={anonDoc} />
       </UiContainer>
