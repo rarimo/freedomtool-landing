@@ -15,7 +15,7 @@ export default function Whitepaper({ ...rest }: Props) {
       <UiContainer>
         <div
           className={cn(
-            'flex flex-col items-center text-center max-w-[900px] mx-auto',
+            'flex flex-col items-center text-center max-w-[950px] mx-auto',
           )}
         >
           <h3 className={cn('section-title')}>{t('whitepaper.title')}</h3>

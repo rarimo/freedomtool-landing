@@ -1,7 +1,7 @@
 import { ThemeConfig } from 'tailwindcss/types/config'
 
 export const fontSize: ThemeConfig['fontSize'] = {
-  h1: ['36px', { lineHeight: '36px', fontWeight: '400' }],
+  h1: ['36px', { lineHeight: '48px', fontWeight: '400' }],
   h2: ['60px', { lineHeight: '66px', fontWeight: '700' }], // not configured
   h3: ['28px', { lineHeight: '28px', fontWeight: '700' }],
   h4: ['32px', { lineHeight: '40px', fontWeight: '700' }], // not configured
@@ -15,7 +15,7 @@ export const fontSize: ThemeConfig['fontSize'] = {
 
   body1: [
     '20px',
-    { lineHeight: '20px', fontWeight: '400', letterSpacing: '0.02em' },
+    { lineHeight: '26px', fontWeight: '400', letterSpacing: '0.02em' },
   ],
   body2: [
     '14px',

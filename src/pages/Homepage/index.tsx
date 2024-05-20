@@ -1,3 +1,4 @@
+import { config } from '@config'
 import { motion, MotionProps } from 'framer-motion'
 import { HTMLAttributes } from 'react'
 
@@ -27,11 +28,15 @@ export default function Homepage({ ...rest }: Props) {
 
       <Repos className={cn('max-w-full w-full')} />
 
-      <UiContainer>
-        <UiDivider />
-      </UiContainer>
+      {config.DISCORD_LINK && (
+        <>
+          <UiContainer>
+            <UiDivider />
+          </UiContainer>
 
-      <Invitation className={cn('max-w-full w-full')} />
+          <Invitation className={cn('max-w-full w-full')} />
+        </>
+      )}
     </motion.div>
   )
 }

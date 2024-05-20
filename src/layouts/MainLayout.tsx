@@ -6,13 +6,12 @@ import { cn } from '@/theme/utils'
 import { UiContainer, UiNavbar } from '@/ui'
 
 export default function MainLayout({
-  className,
   ...rest
 }: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div {...rest} className={cn(className)}>
+    <div {...rest} className={cn(rest.className, 'overflow-x-hidden')}>
       <UiContainer>
-        <UiNavbar className={cn('')} />
+        <UiNavbar />
       </UiContainer>
 
       <AnimatePresence>

@@ -1,3 +1,4 @@
+import { config } from '@config'
 import { HTMLAttributes } from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -20,7 +21,9 @@ export default function Invitation({ ...rest }: Props) {
             className={cn(
               'flex gap-2 items-center bg-primary-base py-4 px-10 rounded-full text-body1 font-bold',
             )}
-            href={'config.DISCORD_LINK'}
+            href={config.DISCORD_LINK}
+            target='_blank'
+            rel='noreferrer'
           >
             <UiIcon name={IconNames.Discord} className={cn('size-6')} />
             {t('invitation.invitation-btn')}

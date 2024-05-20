@@ -77,7 +77,11 @@ export default function HowTo({ ...rest }: Props) {
                 <span className={cn('font-tertiary text-subtitle1 mt-6 mb-4')}>
                   {el.title}
                 </span>
-                <span className={cn('font-secondary text-body2 mt-auto')}>
+                <span
+                  className={cn(
+                    'text-text-secondary font-secondary text-body2 mt-auto',
+                  )}
+                >
                   {el.description}
                 </span>
               </div>

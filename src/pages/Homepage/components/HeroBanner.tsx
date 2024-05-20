@@ -14,17 +14,17 @@ export default function HeroBanner({ ...rest }: Props) {
       <UiContainer className={cn('relative')}>
         <img
           className={cn(
-            'absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none',
+            'absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 pointer-events-none scale-125 -z-10 opacity-75',
           )}
           src='/images/hero-banner-bg.png'
           alt='decor'
         />
         <h1
           className={cn(
-            'flex flex-col items-center text-center gap-15 mx-auto',
-            'py-15 -tracking-[1.4px] max-w-[300px]',
-            'sm:text-h1 sm:max-w-[700px]',
-            'lg:py-[140px]',
+            'flex flex-col items-center text-center gap-15 mx-auto z-10',
+            'py-15 tracking-[0.095px] max-w-[300px]',
+            'sm:text-h1 sm:max-w-[775px]',
+            'lg:py-40',
           )}
         >
           {[t('hero-banner.title-part-1'), t('hero-banner.title-part-2')].map(

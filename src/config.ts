@@ -7,6 +7,8 @@ type Config = {
   APP_NAME: string
   LOG_LEVEL: LogLevelDesc
   BUILD_VERSION: string
+
+  DISCORD_LINK: string
 }
 
 export const config: Config = {
@@ -14,6 +16,8 @@ export const config: Config = {
   APP_NAME: import.meta.env.VITE_APP_NAME,
   LOG_LEVEL: 'trace' as LogLevelDesc,
   BUILD_VERSION: packageJson.version || import.meta.env.VITE_APP_BUILD_VERSION,
+
+  DISCORD_LINK: import.meta.env.VITE_DISCORD_LINK,
 }
 
 /**

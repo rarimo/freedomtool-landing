@@ -14,7 +14,9 @@ export function App() {
 
   const init = useCallback(async () => {
     try {
-      document.title = config.APP_NAME
+      if (config.APP_NAME) {
+        document.title = config.APP_NAME
+      }
     } catch (error) {
       ErrorHandler.processWithoutFeedback(error)
     }
