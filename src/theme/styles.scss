@@ -8,7 +8,7 @@
 :root {
   // Text
   --color-text-primary: #202020;
-  --color-text-secondary: rgba(32, 32, 32, 0.56);
+  --color-text-secondary: rgba(0, 0, 0, 0.6);
 
   // Primary
   --color-primary-base: rgba(128, 237, 153, 1);
@@ -28,4 +28,12 @@
 
 html {
   @apply font-primary;
+}
+
+@layer components {
+  .section-title {
+    @apply font-bold text-center mb-[58px];
+
+    @apply sm:text-h3;
+  }
 }

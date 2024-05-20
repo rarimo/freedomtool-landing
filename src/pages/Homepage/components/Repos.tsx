@@ -45,10 +45,10 @@ export default function Repos({ ...rest }: Props) {
   ]
 
   return (
-    <div {...rest} className={cn('py-20')}>
+    <div {...rest} className={cn('py-10 sm:py-20')}>
       <UiContainer>
         <div id='oss-repos-wrp' className={cn('flex flex-col text-center')}>
-          <h3 id='oss-repos' className={cn('text-h3 text-center mb-[58px]')}>
+          <h3 id='oss-repos' className={cn('section-title')}>
             {t('repos.title')}
           </h3>
 

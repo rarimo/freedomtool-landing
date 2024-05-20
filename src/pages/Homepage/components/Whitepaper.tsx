@@ -18,12 +18,15 @@ export default function Whitepaper({ ...rest }: Props) {
             'flex flex-col items-center text-center max-w-[900px] mx-auto',
           )}
         >
-          <h3 className={cn('text-h3 text-center mb-[58px]')}>
-            {t('whitepaper.title')}
-          </h3>
+          <h3 className={cn('section-title')}>{t('whitepaper.title')}</h3>
 
           <div className={cn('flex flex-col text-center')}>
-            <span className={cn('text-body1 text-center whitespace-pre-line')}>
+            <span
+              className={cn(
+                'text-text-secondary text-center whitespace-pre-line',
+                'sm:text-body1',
+              )}
+            >
               {t('whitepaper.text')}
             </span>
           </div>

@@ -21,9 +21,10 @@ export default function HeroBanner({ ...rest }: Props) {
         />
         <h1
           className={cn(
-            'flex flex-col items-center text-center gap-15 lg:max-w-[700px]',
-            'text-h1 -tracking-[1.4px]',
-            'lg:py-[140px] mx-auto',
+            'flex flex-col items-center text-center gap-15 mx-auto',
+            'py-15 -tracking-[1.4px] max-w-[300px]',
+            'sm:text-h1 sm:max-w-[700px]',
+            'lg:py-[140px]',
           )}
         >
           {[t('hero-banner.title-part-1'), t('hero-banner.title-part-2')].map(

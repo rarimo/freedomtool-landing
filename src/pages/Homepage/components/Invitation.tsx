@@ -11,12 +11,10 @@ export default function Invitation({ ...rest }: Props) {
   const { t } = useTranslation()
 
   return (
-    <div {...rest} className={cn('py-20')}>
+    <div {...rest} className={cn('py-10 sm:py-20')}>
       <UiContainer>
         <div className='flex flex-col items-center text-center'>
-          <h3 className={cn('text-h3 text-center mb-[58px]')}>
-            {t('invitation.title')}
-          </h3>
+          <h3 className={cn('section-title')}>{t('invitation.title')}</h3>
 
           <a
             className={cn(

@@ -37,16 +37,14 @@ export default function HowTo({ ...rest }: Props) {
   )
 
   return (
-    <div {...rest} className={cn('py-20')}>
+    <div {...rest} className={cn('py-10 sm:py-20')}>
       <UiContainer>
         <div className={cn('flex flex-col text-center')}>
-          <h3 className={cn('text-h3 text-center mb-[58px]')}>
-            {t('how-to.title')}
-          </h3>
+          <h3 className={cn('section-title')}>{t('how-to.title')}</h3>
 
           <div
             className={cn(
-              'flex justify-center items-center overflow-hidden w-[clamp(300px,100%,600px)] max-h-[320px] border-[color:var(--border-primary-main)] mx-auto my-[40px] rounded-[16px] border-[1px] border-solid',
+              'flex justify-center items-center overflow-hidden w-[clamp(300px,100%,600px)] max-h-[320px] border-[color:var(--border-primary-main)] mx-auto mb-[40px] rounded-[16px] border-[1px] border-solid',
             )}
           >
             {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
@@ -60,7 +58,7 @@ export default function HowTo({ ...rest }: Props) {
             </video>
           </div>
 
-          <div className={cn('flex gap-2')}>
+          <div className={cn('flex-col md:flex-row', 'flex gap-2')}>
             {steps.map((el, idx) => (
               <div key={idx} className={cn('flex flex-col items-center gap-2')}>
                 <div className='flex justify-center relative w-full'>
@@ -70,6 +68,7 @@ export default function HowTo({ ...rest }: Props) {
                     <UiIcon
                       className={cn(
                         'absolute top-1/2 left-full -translate-y-1/2 -translate-x-1/2 max-w-22',
+                        'invisible w-0 md:visible md:w-auto',
                       )}
                       name={IconNames.LongArrowRight}
                     />
